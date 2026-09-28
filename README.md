@@ -1,5 +1,35 @@
 # CAD-MCP Server (CAD Model Context Protocol Server)
 
+> ## À propos de cette version · About this fork
+>
+> **FR** — Cette version est basée sur [CAD-MCP](https://github.com/daobataotie/CAD-MCP) de daobataotie (licence MIT), qui permet à Claude et aux autres clients MCP de piloter AutoCAD, GstarCAD et ZWCAD. Je l'ai améliorée pour un usage fiable au quotidien :
+> - les outils de lecture et d'édition se connectent d'eux-mêmes à un AutoCAD déjà ouvert ;
+> - la capture d'écran prend bien la fenêtre d'AutoCAD, même quand une autre fenêtre est devant.
+>
+> Testé sur AutoCAD 2027 et Windows 11. Ces améliorations sont proposées au projet d'origine ([daobataotie/CAD-MCP#12](https://github.com/daobataotie/CAD-MCP/pull/12)).
+>
+> **EN** — This fork is based on [CAD-MCP](https://github.com/daobataotie/CAD-MCP) by daobataotie (MIT license), which lets Claude and other MCP clients drive AutoCAD, GstarCAD and ZWCAD. It adds two improvements for reliable day-to-day use:
+> - read and edit tools connect on their own to an AutoCAD instance that is already open;
+> - screenshots capture the AutoCAD window even when another window is in front.
+>
+> Tested on AutoCAD 2027 and Windows 11. Both improvements have been proposed upstream ([daobataotie/CAD-MCP#12](https://github.com/daobataotie/CAD-MCP/pull/12)).
+>
+> ### Installation rapide · Quick install (Claude Code)
+>
+> Windows, AutoCAD complet (pas LT) · full AutoCAD (not LT), Python 3.10+, Git. Dans l'invite de commandes (**cmd**), depuis un dossier au chemin court, par exemple `C:\` · In **cmd**, from a folder with a short path such as `C:\`:
+>
+> ```bat
+> git clone https://github.com/bendourohamza-hub/CAD-MCP.git
+> cd CAD-MCP
+> python -m venv .venv
+> .venv\Scripts\python -m pip install -r requirements.txt
+> claude mcp add cad-mcp --scope user -- "%CD%\.venv\Scripts\python.exe" -X utf8 "%CD%\src\server.py"
+> ```
+>
+> Puis ouvrir une nouvelle séance Claude · Then start a new Claude session. Pour tout ce qui écrit dans un plan, travailler sur une copie du DWG · For anything that writes to a drawing, work on a copy of the DWG.
+>
+> *Maintenu par · Maintained by [Hamza B.](https://www.linkedin.com/in/hamza-bendouro-7a28391a/) — la documentation d'origine suit · the original documentation follows.*
+
 [English](/README_en.md) | [中文](/README_zh.md) 
 
 ## Project Introduction
