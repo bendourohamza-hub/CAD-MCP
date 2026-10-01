@@ -1,0 +1,15 @@
+{
+  "name": "hamza-b",
+  "description": "Claude plugins by Hamza B. — AI for construction and CAD work.",
+  "owner": {
+    "name": "Hamza Bendouro",
+    "url": "https://www.linkedin.com/in/hamza-bendouro-7a28391a"
+  },
+  "plugins": [
+    {
+      "name": "autocad",
+      "source": "./",
+      "description": "Let Claude read, draw and edit in AutoCAD on Windows (based on CAD-MCP by daobataotie)."
+    }
+  ]
+}

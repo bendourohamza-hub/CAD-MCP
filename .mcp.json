@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "autocad": {
+      "command": "uv",
+      "args": ["run", "--directory", "${CLAUDE_PLUGIN_ROOT}", "python", "-X", "utf8", "src/server.py"],
+      "env": { "PYTHONUTF8": "1" }
+    }
+  }
+}

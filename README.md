@@ -14,7 +14,18 @@
 >
 > Tested on AutoCAD 2027 and Windows 11. Both improvements have been proposed upstream ([daobataotie/CAD-MCP#12](https://github.com/daobataotie/CAD-MCP/pull/12)).
 >
-> ### Installation rapide · Quick install (Claude Code)
+> ### Installer le plugin Claude Code · Install the Claude Code plugin
+>
+> Windows, AutoCAD complet (pas LT) · full AutoCAD (not LT), et · and [uv](https://docs.astral.sh/uv/) (`winget install astral-sh.uv`). Dans Claude Code · In Claude Code:
+>
+> ```
+> /plugin marketplace add bendourohamza-hub/CAD-MCP
+> /plugin install autocad@hamza-b
+> ```
+>
+> Le plugin démarre le serveur tout seul et installe ses dépendances au premier lancement, qui est donc plus long. Si le serveur apparaît en échec la toute première fois, relancer Claude Code. Le plugin donne aussi à Claude une méthode de travail sûre : vérifier le dessin actif, écrire sur une copie, sur des calques dédiés · The plugin starts the server on its own and installs its dependencies on first launch, which is therefore slower. If the server shows as failed the very first time, restart Claude Code. The plugin also gives Claude a safe working method: check the active drawing, write to a copy, on dedicated layers.
+>
+> ### Installation manuelle · Manual install
 >
 > Windows, AutoCAD complet (pas LT) · full AutoCAD (not LT), Python 3.10+, Git. Dans l'invite de commandes (**cmd**), depuis un dossier au chemin court, par exemple `C:\` · In **cmd**, from a folder with a short path such as `C:\`:
 >

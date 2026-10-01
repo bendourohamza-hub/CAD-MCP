@@ -1,0 +1,14 @@
+{
+  "name": "autocad",
+  "displayName": "AutoCAD for Claude",
+  "version": "1.0.0",
+  "description": "Let Claude read, draw and edit in AutoCAD (also GstarCAD and ZWCAD) on Windows. Based on CAD-MCP by daobataotie, with reliability improvements.",
+  "author": {
+    "name": "Hamza Bendouro",
+    "url": "https://www.linkedin.com/in/hamza-bendouro-7a28391a"
+  },
+  "homepage": "https://github.com/bendourohamza-hub/CAD-MCP",
+  "repository": "https://github.com/bendourohamza-hub/CAD-MCP",
+  "license": "MIT",
+  "keywords": ["autocad", "cad", "dwg", "mcp", "btp", "construction"]
+}
